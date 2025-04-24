@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Víctor Torres Cabrera">
+    <title>Gimnasio Virtual - Darse de alta</title>
+    <link rel="stylesheet" href="css/estilo_darsedealta.css">
+  </head>
+
+  <body>
+
+    <header class="encabezado">
+      <h1>Darse de alta</h1>
+      <nav>
+        <ul class="lista-nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="clases.html">Clases Online</a></li>
+          <li><a href="planes.html">Planes</a></li>
+          <li><a href="ejercicios.html">Ejercicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="darse-de-alta.html" class="activo">Darse de alta</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contenedor">
+      <section id="registro" class="caja">
+        <h2 id="titulo">Selecciona tu plan y regístrate</h2>
+        <form action="#" method="post" class="formulario-registro">
+          <label for="plan">Plan:</label>
+          <select id="plan" name="plan" required>
+            <option value="">-- Elige un plan --</option>
+            <option value="basico">Básico - 9,99 €/mes</option>
+            <option value="premium">Premium - 19,99 €/mes</option>
+            <option value="pro">Pro - 29,99 €/mes</option>
+          </select>
+
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" placeholder="tu@ejemplo.com" required>
+
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" placeholder="600 123 456">
+
+          <label for="contrasena">Contraseña:</label>
+          <input type="password" id="contrasena" name="contrasena" placeholder="********" required>
+
+          <button type="submit" class="boton">Crear cuenta</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="pie">
+      <p>&copy; 2025 Gimnasio Virtual. Todos los derechos reservados.</p>
+      <p>Autor: Víctor Torres Cabrera</p>
+    </footer>
+  </body>
+
+</html>
